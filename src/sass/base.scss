@@ -1,0 +1,25 @@
+body {
+	/* 1 Positioning */ 
+
+	/* 2 Block model */ 
+	padding: 0 40px;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+
+	/* 4 Visual */ 
+	overflow-x: hidden;
+
+	/* 5 Animation*/ 
+
+	/* 6 Misc */
+}
+.container {
+	/* 2 Block model */
+	width: 100%;
+	max-width: 1240px;	
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
