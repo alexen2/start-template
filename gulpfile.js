@@ -57,8 +57,10 @@ gulp.task('sass', function(){
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
-    }))	       
+    }))	     
+    .pipe(gulp.dest(path.build.css))  
 		.pipe(sass({outputStyle: 'compressed'}))
+    .pipe(concat('style.min.css'))
     .pipe(gulp.dest(path.build.css))
 });
 
