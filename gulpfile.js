@@ -37,7 +37,8 @@ var path = {
     style: 'src/**/*.scss',
     pug: 'src/**/*.pug',
     img: 'src/blocks/**/*.{png,jpg,jpeg,svg,gif}',
-    svg: 'src/resources/icons/*.svg'
+    svg: 'src/resources/icons/*.svg',
+    js: 'src/blocks/**/*.js'
   },
   clean: './build'
 };
