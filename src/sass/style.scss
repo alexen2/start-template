@@ -1,3 +1,18 @@
 @import 'fonts';
 @import 'variables';
+@import 'mixins';
 @import 'base';
+
+/*
+ * Blocks BEM library
+ *
+ */
+
+// Mixins
+
+@import '../blocks/icon/icon';
+@import '../blocks/btn/btn';
+
+// Blocks
+
+@import '../blocks/link/link';

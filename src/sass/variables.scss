@@ -6,7 +6,7 @@
 $font-main: Arial, Helvetica, sans-serif;
 
 /*
- * Color
+ * Colors
  *
  */
  
@@ -20,11 +20,24 @@ $color-text: $color-black;
 $color-link: #0563c1;
 
 /*
+ * Grid
+ *
+ */
+
+$breakpoints: (
+	sm: 480px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
+
+/*
  * Animation Speed
  *
  */
 
 $animation-speed: 0.4s;
+
 /* 1 Positioning */
 
 /* 2 Block model */

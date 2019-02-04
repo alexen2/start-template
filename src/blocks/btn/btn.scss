@@ -1,0 +1,148 @@
+/*
+ * Variables
+ *
+ */
+
+/* 1 Positioning */
+
+/* 2 Block model */
+$btn-padding-x: 10px;
+$btn-padding-y: 8px;
+
+/* 3 Typography */
+$btn-font-sizes: (
+  null: (14px, 1.2),
+  sm : 16px,
+  md: (18px, 1.4),
+  lg : 20px,
+  xl : (22px, 1.45)
+);
+
+/* 4 Visual */
+$btn-color: rgba(0, 0, 0, 0.87);
+$btn-color-bg: #e0e0e0;
+$btn-color-border: #e0e0e0;
+
+$btn-color-bg-hover: #d5d5d5;
+$btn-color-border-hover: #d5d5d5;
+
+$btn-border-size: 1px;
+$btn-border-type: solid;
+
+/* 5 Animation*/
+
+/* 6 Misc */
+$btn-icon-sizes: (
+  null: (16px, 16px),
+  sm : (19px, 19px),
+  md: (25px, 25px),
+  lg : (28px, 28px),
+  xl : (31px, 31px)
+);
+$btn-icon-margin: (
+  null: 8px,
+  lg : 12px
+);
+
+$btn-icon-color: $btn-color;
+
+/*--------------------------------------------*/
+
+.btn {
+	@include font-size($btn-font-sizes);	
+	color: inherit;
+	border: $btn-border-size $btn-border-type $btn-color-border;
+	margin: 0;
+	cursor: pointer;
+	display: inline-flex;
+	outline: none;
+	padding: $btn-padding-y $btn-padding-x;
+	position: relative;
+	align-items: center;
+	user-select: none;
+	border-radius: 0;
+	vertical-align: middle;
+	justify-content: center;
+	-moz-appearance: none;
+	text-decoration: none;
+	background-color: $btn-color-bg;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: $btn-color-bg-hover;
+  border-color: $btn-color-border-hover;
+}
+.btn .icon {	
+	fill: $btn-icon-color;
+	flex-shrink: 0;
+	box-sizing: inherit;
+	@include width-height($btn-icon-sizes);
+}
+.btn .icon:first-child:not(:last-child) {
+	@include margin($btn-icon-margin, 'right');
+}
+.btn .icon:last-child:not(:first-child) {
+	@include margin($btn-icon-margin, 'left');
+}
+
+.btn {
+	margin: 10px;
+}
+
+/*--------------------------------------------*/
+
+/*
+ * Colors
+ *
+ * color
+ * background-color
+ * border-color
+ * background-hover
+ * border-hover
+ * icon-color
+ * 
+ * if icon-color == null then icon-color == color
+ */
+$btn-colors-modifiers: (
+	red: (
+		#ffffff, 
+		rgb(225, 0, 80), 
+		rgb(225, 0, 80), 
+		rgb(157, 0, 56), 
+		rgb(157, 0, 56), 
+		null
+	),
+	blue: (
+		#fff, 
+		#2196f3, 
+		#2196f3, 
+		#1976d2, 
+		#1976d2, 
+		null
+	)
+);
+
+@each $color, $value in $btn-colors-modifiers {
+  .btn--#{$color} {
+    @include btn-colors-modifiers($value);
+  }
+}
+
+/*--------------------------------------------*/
+
+/*
+ * Modifiers
+ *
+ */
+
+@import '--sm/--sm';
+@import '--lg/--lg';
+
+@import '--outline/--outline';
+@import '--flat/--flat';
+
+@import '--fix/--fix';

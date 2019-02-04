@@ -1,0 +1,14 @@
+/* 2 Block model */
+$btn-fix: (
+  null: (80px, auto),
+  sm : (100px, auto),
+  md: (120px, auto),
+  lg : (140px, auto),
+  xl : (160px, auto)
+);
+
+/*--------------------------------------------*/
+
+.btn--fix {
+  @include width-height($btn-fix); 
+}

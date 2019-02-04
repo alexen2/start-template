@@ -1,0 +1,46 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Style Guide')
+
+	body
+		include ../blocks/mixins.pug
+		
+		div.container
+			h1 Buttons
+
+			include ../blocks/btn/btn.pug
+			+btn({text: 'Button'})
+			+btn({text: 'Button link', type: 'link'})
+			+btn({icon_l: 'icon--cart'})
+			+btn({text: 'Button', icon_l: 'icon--cart'})
+			+btn({text: 'Button', icon_r: 'icon--cart'})
+
+			br
+
+			+btn({text: 'Button sm', icon_l: 'icon--cart'})(class="btn--sm")
+			+btn({text: 'Button', icon_l: 'icon--cart'})
+			+btn({text: 'Button lg', icon_l: 'icon--cart'})(class="btn--lg")
+
+			br
+
+			+btn({text: 'Button'})(class="btn--red")
+			+btn({text: 'Button', icon_l: 'icon--cart'})(class="btn--blue")
+
+			br
+
+			+btn({text: 'Button'})(class="btn--outline")
+
+			br
+
+			+btn({text: 'Button'})(class="btn--flat")
+
+			br
+
+			+btn({text: 'Button'})(class="btn--fix")
+
+			h1 Links
+
+			a.link(href="#") Link
+
+		include include/script.pug
