@@ -5,10 +5,6 @@
 Install
 
     $ npm install
-
-Build
-
-    $ gulp build
     
 Run locally
 
