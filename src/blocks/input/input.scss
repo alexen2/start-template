@@ -1,0 +1,118 @@
+.no-js .input input:focus {
+	outline: 1px solid blue;
+}
+.input {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-flex;
+	flex-direction: column;
+	vertical-align: top;
+	width: 200px;
+	min-width: 0;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding: 0;
+
+	/* 4 Visual */
+	border: 0;
+}
+
+.input label {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* 2 Block model */
+	padding: 0;
+
+	/* 3 Typography */
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 1rem;
+	line-height: 1;
+	font-weight: 400;
+	color: black;
+}
+label + .input__wrapper {
+	margin-top: 20px;
+}
+.input__wrapper {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-flex;
+	align-items: center;
+
+	/* 3 Typography */
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 1rem;
+	line-height: 1.1875em;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+	cursor: text;
+}
+.input__wrapper::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+  left: 0;
+  right: 0;
+	content: "";
+
+	/* 4 Visual */
+	border-top: 1px solid rgba(0, 0, 0, 0.42);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+	border-left: 1px solid rgba(0, 0, 0, 0.42);
+	border-right: 1px solid rgba(0, 0, 0, 0.42);
+	pointer-events: none;
+	border-radius: 0;
+}
+.input__wrapper:hover {
+	opacity: 0.7;
+}
+.input:focus .input__wrapper{
+	border: 1px solid blue;
+}
+.input input {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	min-width: 0;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-sizing: content-box;
+
+	/* 3 Typography */
+	font: inherit;
+	color: currentColor;
+
+	/* 4 Visual */
+	border: 0;
+	background: none;
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+.input .icon:first-child:not(:last-child) {
+	margin-left: 5px;
+}
+.input .icon:last-child:not(:first-child) {
+	margin-right: 5px;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

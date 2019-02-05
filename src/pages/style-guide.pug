@@ -3,7 +3,7 @@ html(lang="ru")
 	include include/head.pug
 	+head('Style Guide')
 
-	body
+	body.no-js
 		include ../blocks/mixins.pug
 		
 		div.container
@@ -42,5 +42,17 @@ html(lang="ru")
 			h1 Links
 
 			a.link(href="#") Link
+
+			br
+
+			h1 Input
+
+			include ../blocks/input/input.pug
+			+input({name: 'login', label_text: 'Login', type: 'text', placeholder: 'Login', icon_l: 'icon--cart'})
+
+			br
+
+			+input({name: 'login', label_text: 'Login', type: 'text', placeholder: 'Login', icon_r: 'icon--cart'})
+
 
 		include include/script.pug
