@@ -43,4 +43,11 @@ html(lang="ru")
 
 			a.link(href="#") Link
 
+			h1 Checkbox
+
+			include ../blocks/checkbox/checkbox.pug
+			+checkbox({name: 'rub', text: 200, checkbox__icon: 'icon--cart'})
+
+
+
 		include include/script.pug

@@ -1,0 +1,9 @@
+mixin checkbox(data)
+	div.checkbox(class!=attributes.class)
+		label(for!=data.name)
+			span.checkbox__wrapper.checkbox__wrapper-dop.ddad
+				span.checkbox__icon-wrapper
+					+icon(data.checkbox__icon)
+					input(type="checkbox" name=data.name id!=data.name) 
+			span.checkbox__text
+			!=data.text
