@@ -43,4 +43,15 @@ html(lang="ru")
 
 			a.link(href="#") Link
 
+			h1 Ul
+			
+			include ../blocks/ul/ul.pug
+			+ul([
+          'Enter your card number',
+          'Enter the &ldquo;valid thru&rdquo; data: Month/Year',
+          'Enter three numbers from the backside of&nbsp;your card.',
+          'Checking the box you agree and accept the terms and conditions of&nbsp;the banking services',
+          'Click &ldquo;Continue&rdquo; button'
+          ])
+
 		include include/script.pug

@@ -1,0 +1,4 @@
+mixin ul(data)
+  ul.ul&attributes(attributes)
+    - for (var i = 0; i < data.length; i++)
+      li!=data[i]
