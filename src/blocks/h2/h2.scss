@@ -1,0 +1,19 @@
+/* 3 Typography */
+$h2-font-sizes: (
+  null: (22px, 1.2),
+  sm : 26px,
+  md: (30px, 1.4),
+  lg : 34px,
+  xl : (38px, 1.45)
+);
+
+.h2 {
+	/* 2 Block model */
+	margin: 0;
+	
+	/* 3 Typography */
+	font-family: inherit;
+	@include font-size($h2-font-sizes);
+	font-weight: 700;
+	color: black;
+}
