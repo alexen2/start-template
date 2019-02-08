@@ -43,4 +43,9 @@ html(lang="ru")
 
 			a.link(href="#") Link
 
+			h1 Logo
+
+			include ../blocks/logo/logo.pug
+			+logo({img: 'logo.png'})(href="#")
+
 		include include/script.pug
