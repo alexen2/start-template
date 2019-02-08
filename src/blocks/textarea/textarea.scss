@@ -10,6 +10,18 @@
   border: 0;
   background-color: #ffffff;
 }
+.textarea label {
+  /* 2 Block model */
+  display: block;
+  margin-bottom: 5px;
+
+  /* 3 Typography */
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: gray;
+}
 .textarea textarea {
   /* 1 Positioning */
   position: relative;
@@ -18,10 +30,9 @@
   /* 2 Block model */
   display: block;
   width: 100%;
-  height: 39px;
+  height: 100px;
   padding: 10px 0 5px 0;
   box-sizing: border-box;
-  overflow: hidden;
 
   /* 3 Typography */
   font-family: inherit;
@@ -32,19 +43,16 @@
 
   /* 4 Visual */
   border: 0;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 2px solid black;
   border-radius: 0;
   background: none;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  overflow: auto;
 
-  /* 5 Animation*/
-  transition: all 0.2s ease-in-out;
-  
   /* 6 Misc */
   resize: none;
-
-  &[data-empty="false"],
-  &:valid,
   &:focus {
     /* 4 Visual */
     border-bottom: 2px solid black;
@@ -52,30 +60,4 @@
   &:focus {
     outline: none;
   }
-  &[data-empty="false"] + label,
-  &:valid + label,
-  &:focus + label {
-    /* 3 Typography */
-    font-weight: 700;
-    font-size: 20px;
-    transform: translate3d(0, -19px, 0);
-  }
-}
-.textarea label {
-  /* 1 Positioning */
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* 3 Typography */
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
-  
-  color: gray;
-  transform: translate3d(0, 0, 0);
-
-  /* 5 Animation*/
-  transition: all 0.2s ease-in-out;
 }
