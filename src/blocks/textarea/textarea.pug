@@ -1,0 +1,4 @@
+mixin textarea(data)
+	fieldset.textarea(class!=attributes.class)
+		textarea(id=data.name, name=data.name, required=data.required, cols=data.cols, rows=data.rows)
+		label(for!= data.name)!=data.title
