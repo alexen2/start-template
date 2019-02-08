@@ -46,6 +46,8 @@ html(lang="ru")
 			h1 Radio
 
 			include ../blocks/radio/radio.pug
-			+radio({name:'adadada' ,text:'Выбрать'})
+			+radio({id: 'b1', name:'adadada', value: '5', text:'Выбрать'})
+
+			+radio({id: 'b2', name:'adadada', value: '4', text: 'убрать', checked: 'checked'})
 
 		include include/script.pug
