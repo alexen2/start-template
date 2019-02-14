@@ -1,0 +1,19 @@
+/* 3 Typography */
+$h5-font-sizes: (
+  null: (10px, 1.2),
+  sm : 14px,
+  md: (18px, 1.4),
+  lg : 22px,
+  xl : (26px, 1.45)
+);
+
+.h5 {
+	/* 2 Block model */
+	margin: 0;
+	
+	/* 3 Typography */
+	font-family: inherit;
+	@include font-size($h5-font-sizes);
+	font-weight: 700;
+	color: black;
+}
