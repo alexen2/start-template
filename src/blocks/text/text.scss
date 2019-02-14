@@ -1,0 +1,19 @@
+/* 3 Typography */
+$text-font-sizes: (
+  null: (14px, 1.2),
+  sm : 18px,
+  md: (22px, 1.4),
+  lg : 26px,
+  xl : (30px, 1.45)
+);
+
+.text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: inherit;
+	@include font-size($text-font-sizes);
+	font-weight: 400;
+	color: black;
+}
