@@ -94,4 +94,11 @@ html(lang="ru")
 			include ../blocks/logo/logo.pug
 			+logo({img: 'logo.png'})(href="#")
 
+			h1 Radio
+
+			include ../blocks/radio/radio.pug
+			+radio({id: 'b1', name:'adadada', value: '5', text:'Выбрать'})
+
+			+radio({id: 'b2', name:'adadada', value: '4', text: 'убрать', checked: 'checked'})
+
 		include include/script.pug

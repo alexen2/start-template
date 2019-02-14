@@ -1,0 +1,9 @@
+mixin radio(data)
+	div.radio(class!=attributes.class)
+		label(for!=data.id)
+			if data.checked
+				input(type="radio" name=data.name id!=data.id value=data.value checked)
+			else
+				input(type="radio" name=data.name id!=data.id value=data.value)
+			span.radio__text
+			!=data.text
