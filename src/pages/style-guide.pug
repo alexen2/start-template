@@ -43,6 +43,7 @@ html(lang="ru")
 
 			a.link(href="#") Link
 
+
 			h1 Ul
 			
 			include ../blocks/ul/ul.pug
@@ -100,5 +101,13 @@ html(lang="ru")
 			+radio({id: 'b1', name:'adadada', value: '5', text:'Выбрать'})
 
 			+radio({id: 'b2', name:'adadada', value: '4', text: 'убрать', checked: 'checked'})
+
+			h1 Checkbox
+
+			include ../blocks/checkbox/checkbox.pug
+			+checkbox({name: 'rub', value: 'rut', text: 200})
+
+			+checkbox({name: 'dolsr', value: 'dut', text: 200, checked: 'checked'})
+
 
 		include include/script.pug
