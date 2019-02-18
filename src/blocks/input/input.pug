@@ -1,12 +1,12 @@
 mixin input(data)
-	div.input(class!=attributes.class)
-		if data.label_text
-			label(for!=data.name)!=data.label_text
-			div.input__wrapper
-				if data.icon_l
-					+icon(data.icon_l)
+	div.input&attributes(attributes)
+		label(for!=data.name class!=data.label_hide)!=data.label_text
+		
+		div.input__wrapper
+			if data.icon_l
+				+icon(data.icon_l)
 
-				input(type=data.type name=data.name id!=data.name value=data.value placeholder=data.placeholder)
+			input(type=data.type name=data.name id!=data.name value=data.value placeholder=data.placeholder)
 
-				if data.icon_r
-					+icon(data.icon_r)
+			if data.icon_r
+				+icon(data.icon_r)
