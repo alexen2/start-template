@@ -23,3 +23,22 @@ body {
 	padding: 0 20px;
 	box-sizing: border-box;
 }
+.label-hide {
+	/* 1 Positioning */
+  position: absolute;
+
+	/* 2 Block model */
+  width: 0;
+  height: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+	
+	/* 3 Typography */
+  white-space: nowrap;
+
+	/* 6 Misc */
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

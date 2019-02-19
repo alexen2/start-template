@@ -1,8 +1,7 @@
 mixin input(data)
 	div.input&attributes(attributes)
-		label(for!=data.name class!=data.label_hide)!=data.label_text
-		
-		div.input__wrapper
+		label(for!=data.name)
+			span.label_text(class!=data.label_hide)!=data.label_text
 			if data.icon_l
 				+icon(data.icon_l)
 

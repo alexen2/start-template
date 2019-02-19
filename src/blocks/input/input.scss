@@ -6,23 +6,14 @@
 	display: inline-flex;
 	flex-direction: column;
 	vertical-align: top;
-	width: 200px;
-	min-width: 0;
-	margin-top: 16px;
-	margin-bottom: 16px;
-	padding: 0;
-
-	/* 4 Visual */
-	border: 0;
+	width: 100%;
 }
-
 .input label {
 	/* 1 Positioning */
-	position: absolute;
-	top: 0;
-	left: 0;
+	position: relative;
 
 	/* 2 Block model */
+	width: 100%;
 	padding: 0;
 
 	/* 3 Typography */
@@ -32,36 +23,17 @@
 	font-weight: 400;
 	color: black;
 }
-label + .input__wrapper {
-	margin-top: 20px;
+.label_text {
+	/* 3 Typography */
+	font-size: inherit;
 }
-.input__wrapper {
+.input input {
 	/* 1 Positioning */
 	position: relative;
 
 	/* 2 Block model */
-	display: inline-flex;
-	align-items: center;
-
-	/* 3 Typography */
-	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-	font-size: 1rem;
-	line-height: 1.1875em;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 0.87);
-	cursor: text;
-}
-.input__wrapper:hover {
-	opacity: 0.7;
-}
-.input:focus .input__wrapper{
-	border: 1px solid red;
-}
-.input input {
-	/* 2 Block model */
 	display: block;
 	width: 100%;
-	min-width: 0;
 	margin: 0;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -70,8 +42,12 @@ label + .input__wrapper {
 	box-sizing: content-box;
 
 	/* 3 Typography */
-	font: inherit;
-	color: currentColor;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 1rem;
+	line-height: 1.1875em;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+	cursor: text;
 
 	/* 4 Visual */
 	border-top: 1px solid rgba(0, 0, 0, 0.42);
@@ -82,36 +58,17 @@ label + .input__wrapper {
 	background: none;
 	-webkit-tap-highlight-color: transparent;
 }
-.input .icon:first-child:not(:last-child) {
+.input  .icon:first-child:not(:last-child) {
 	/* 1 Positioning */
 	position: absolute;
-	left: 5px;
+	top: 0px;
+	left: 0;
 }
-.input .icon:last-child:not(:first-child) {
+.input  .icon:last-child:not(:first-child) {
 	/* 1 Positioning */
 	position: absolute;
+	top: 28px;
 	right: 5px;
-}
-.label_hide:not(:focus):not(:active),
-input[type="checkbox"].label_hide,
-input[type="radio"].label_hide {
-	/* 1 Positioning */
-  position: absolute;
-
-	/* 2 Block model */
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-	
-	/* 3 Typography */
-  white-space: nowrap;
-
-	/* 6 Misc */
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 /* 1 Positioning */
 
