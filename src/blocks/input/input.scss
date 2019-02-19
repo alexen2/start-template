@@ -55,7 +55,7 @@ label + .input__wrapper {
 	opacity: 0.7;
 }
 .input:focus .input__wrapper{
-	border: 1px solid blue;
+	border: 1px solid red;
 }
 .input input {
 	/* 2 Block model */
@@ -83,13 +83,13 @@ label + .input__wrapper {
 	-webkit-tap-highlight-color: transparent;
 }
 .input .icon:first-child:not(:last-child) {
+	/* 1 Positioning */
 	position: absolute;
-
 	left: 5px;
 }
 .input .icon:last-child:not(:first-child) {
+	/* 1 Positioning */
 	position: absolute;
-
 	right: 5px;
 }
 .label_hide:not(:focus):not(:active),
