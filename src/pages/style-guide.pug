@@ -109,5 +109,20 @@ html(lang="ru")
 
 			+checkbox({name: 'dolsr', value: 'dut', text: 200, checked: 'checked'})
 
+			br
+
+			h1 Input
+
+			include ../blocks/input/input.pug
+
+			div.wrapper
+				+input({name: 'login', label_text: 'Login', type: 'text', placeholder: 'Login', icon_l: 'icon--cart', label_hide: 'label-hide'})
+			br
+			div.wrapper
+				+input({name: 'login1', label_text: 'Login', type: 'text', placeholder: 'Loginnnnnnnnnnnnnnnnnnnnn', icon_r: 'icon--cart'})
+			br
+			div.wrapper
+				+input({name: 'login2', label_text: 'Login', type: 'text', placeholder: 'Login'})
+
 
 		include include/script.pug

@@ -1,0 +1,86 @@
+.input {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;
+}
+.input input:hover {
+	opacity: 0.7;
+}
+.input input:focus {
+	opacity: 1;
+	border: 1px solid gray;
+	outline: none;
+}
+.label_text {
+	/* 2 Block model */
+	display: block;
+
+	/* 3 Typography */
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	font-weight: 400;
+	color: black;
+}
+.input input {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+
+	/* 3 Typography */
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	font-weight: 400;
+	color: black;
+	cursor: text;
+
+	/* 4 Visual */
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-radius: 0;
+	background: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.input input::-webkit-input-placeholder {
+	text-overflow:ellipsis;
+	color: gray;
+}
+.input input::-moz-placeholder {
+	text-overflow:ellipsis;
+	color: gray;
+}  
+.input input:-ms-input-placeholder {
+	text-overflow:ellipsis;
+	color: gray;
+} 
+
+//Color placeholder
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

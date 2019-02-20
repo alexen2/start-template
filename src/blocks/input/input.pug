@@ -1,0 +1,4 @@
+mixin input(data)
+	label(for!=data.name).input&attributes(attributes)
+		span.label_text(class!=data.label_hide)!=data.label_text
+		input(type=data.type name=data.name id!=data.name value=data.value placeholder=data.placeholder)
