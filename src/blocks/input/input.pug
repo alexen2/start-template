@@ -1,11 +1,4 @@
 mixin input(data)
-	div.input&attributes(attributes)
-		label(for!=data.name)
-			span.label_text(class!=data.label_hide)!=data.label_text
-			if data.icon_l
-				+icon(data.icon_l)
-
-			input(type=data.type name=data.name id!=data.name value=data.value placeholder=data.placeholder)
-
-			if data.icon_r
-				+icon(data.icon_r)
+	label(for!=data.name).input&attributes(attributes)
+		span.label_text(class!=data.label_hide)!=data.label_text
+		input(type=data.type name=data.name id!=data.name value=data.value placeholder=data.placeholder)

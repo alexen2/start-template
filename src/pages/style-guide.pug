@@ -48,10 +48,16 @@ html(lang="ru")
 			h1 Input
 
 			include ../blocks/input/input.pug
-			+input({name: 'login', label_text: 'Login', type: 'text', placeholder: 'Login', icon_l: 'icon--cart', label_hide: 'label-hide'})
-			br
 
-			+input({name: 'login', label_text: 'Login', type: 'text', placeholder: 'Login', icon_r: 'icon--cart'})
+			div.wrapper
+				+input({name: 'login', label_text: 'Login', type: 'text', placeholder: 'Login', icon_l: 'icon--cart', label_hide: 'label-hide'})
+			br
+			div.wrapper
+				+input({name: 'login1', label_text: 'Login', type: 'text', placeholder: 'Loginnnnnnnnnnnnnnnnnnnnn', icon_r: 'icon--cart'})
+			br
+			div.wrapper
+				+input({name: 'login2', label_text: 'Login', type: 'text', placeholder: 'Login'})
+
 
 
 		include include/script.pug
