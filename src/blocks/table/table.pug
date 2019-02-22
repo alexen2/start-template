@@ -1,0 +1,10 @@
+mixin table(data)
+  table.table(border="0" cellspacing="0" cellpadding="0" class!=attributes.class)
+    tbody      
+       - for(var i = 0; i < data.text.length; i++)
+        tr
+          - for (var j = 0; j < data.text[i].length; j++)
+            if i == 0 && data.th
+              th!=data.text[i][j]
+            else
+              td!=data.text[i][j]

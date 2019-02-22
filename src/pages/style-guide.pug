@@ -119,10 +119,36 @@ html(lang="ru")
 				+input({name: 'login', label_text: 'Login', type: 'text', placeholder: 'Login', icon_l: 'icon--cart', label_hide: 'label-hide'})
 			br
 			div.wrapper
-				+input({name: 'login1', label_text: 'Login', type: 'text', placeholder: 'Loginnnnnnnnnnnnnnnnnnnnn', icon_r: 'icon--cart'})
+				+input({name: 'login1', label_text: 'Login', type: 'text', placeholder: 'Logi', icon_r: 'icon--cart'})
 			br
 			div.wrapper
-				+input({name: 'login2', label_text: 'Login', type: 'text', placeholder: 'Login'})
+				+input({
+					name: 'login2', 
+					label_text: 'Login', 
+					type: 'text', 
+					placeholder: 'Login'
+				})
 
+			br
+
+			h1 Block-table
+
+			include ../blocks/table/table.pug
+			
+			+table({
+			text: [
+				['Твид','Трикотаж','Гипюр', 'Пальтовые ткани'],
+				['Твид1','Трикотаж1','Гипюр1', 'Пальтовые ткани1'],
+				['Твид2','Трикотаж2','Гипюр2', 'Пальтовые ткани2'],
+			]})
+
+			+table({
+				text: [
+					['Твид','Трикотаж','Гипюр', 'Пальтовые ткани'],
+					['Твид1','Трикотаж1','Гипюр1', 'Пальтовые ткани1'],
+					['Твид2','Трикотаж2','Гипюр2', 'Пальтовые ткани2'],
+				], 
+				th: true 
+			})
 
 		include include/script.pug
