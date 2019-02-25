@@ -1,0 +1,21 @@
+mixin search(data)
+	div.search(class!=attributes.class)
+		form.search__form(name=data.form_name)
+			include ../input/input.pug			
+
+				+input({name: 'search', label_text: 'search', type: 'text', placeholder: data.placeholder, label_hide: 'label-hide'})
+
+				if data.btn_text
+					button.search__btn(type="submit")
+						span!=data.btn_text
+
+				else
+					include ../icon/icon.pug
+
+					if data.btn
+						button.search__btn(type="submit")
+							+icon(data.icon)
+
+					else
+						span.search__icon
+							+icon(data.icon)
