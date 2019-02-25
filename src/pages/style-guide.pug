@@ -157,6 +157,22 @@ html(lang="ru")
 
 			include ../blocks/search/search.pug
 
+			+search({form_name: 'search', placeholder: 'search', btn_text: 'search', label_hide: 'label-hide'})
+
+			br
+
+			+search({form_name: 'search1', placeholder: 'search1', label_hide: 'label-hide'})
+
+			br
+			
+			+search({form_name: 'search2', placeholder: 'search2', label_hide: 'label-hide', icon: 'icon--cart'})
+
+			br
+
+			+search({form_name: 'search3', placeholder: 'search3', label_hide: 'label-hide', btn: true, icon: 'icon--cart'})
+
+
+			br
 			br
 
 

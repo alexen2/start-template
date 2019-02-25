@@ -3,19 +3,19 @@ mixin search(data)
 		form.search__form(name=data.form_name)
 			include ../input/input.pug			
 
-				+input({name: 'search', label_text: 'search', type: 'text', placeholder: data.placeholder, label_hide: 'label-hide'})
+			+input({name: data.form_name, label_text: 'search', type: 'text', placeholder: data.placeholder, label_hide: data.label_hide})
 
-				if data.btn_text
-					button.search__btn(type="submit")
-						span!=data.btn_text
+			if data.btn_text
+				button.search__btn(type="submit")
+					span.search__btn-text!=data.btn_text
+
+			if data.icon
+				include ../icon/icon.pug
+
+				if data.btn
+					button.search__btn-icon(type="submit")
+						+icon(data.icon)
 
 				else
-					include ../icon/icon.pug
-
-					if data.btn
-						button.search__btn(type="submit")
-							+icon(data.icon)
-
-					else
-						span.search__icon
-							+icon(data.icon)
+					span.search__icon
+						+icon(data.icon)
