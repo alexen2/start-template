@@ -1,4 +1,7 @@
 .search__form {
+	/* 1 Positioning */
+	position: relative;
+
 	/* 2 Block model */
 	display: flex;
 	align-items: center;
@@ -6,6 +9,7 @@
 .search__btn {
 	/* 2 Block model */
 	display: block;
+	height: 40px;
 	padding: 10px 10px;
 	box-sizing: border-box;
 
@@ -18,10 +22,46 @@
 .search__btn-text {
 	/* 3 Typography */
 	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-	font-size: 1rem;
-	line-height: 1.4;
+	font-size: 14px;
+	line-height: 18px;
 	font-weight: 400;
 	color: black;
+}
+.search__icon {
+	/* 1 Positioning */
+	position: absolute;
+	top: 12px;
+	right: 10px;
+}
+.search__btn-icon {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-flex;
+	height: 40px;
+	padding: 19px 19px;
+	box-sizing: border-box;
+
+	/* 4 Visual */
+	border: 1px solid black;
+	border-left: none;
+	background: none;
+	outline: none;
+
+	/* 6 Misc */
+	cursor: pointer;
+}
+.search__btn-icon .icon {
+	/* 1 Positioning */
+	position: absolute;
+
+	/* 6 Misc */
+	transform: translate(-50%, -50%);
+}
+.search__form:hover .search__icon {
+	/* 4 Visual */
+	opacity: 0.7;
 }
 .search__btn:hover {
 	/* 4 Visual */
@@ -34,7 +74,6 @@
 }
 .search__btn:active {
 	/* 4 Visual */
-	border: 1px solid black;
 	border-left: none;
 	background-color: black;
 }
@@ -42,14 +81,20 @@
 	/* 3 Typography */
 	color: #ffffff;
 }
-/* 1 Positioning */
-
-/* 2 Block model */
-
-/* 3 Typography */
-
-/* 4 Visual */
-
-/* 5 Animation*/
-
-/* 6 Misc */
+.search__btn-icon:hover {
+	/* 4 Visual */
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.search__btn-icon:focus {
+	/* 4 Visual */
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.search__btn-icon:active {
+	/* 4 Visual */
+	border-left: none;
+	background-color: black;
+}
+.search__btn-icon:active .icon {
+	/* 4 Visual */
+	fill: #ffffff;
+}
