@@ -41,4 +41,46 @@ html(lang="ru")
 				+icon-text({icon: 'icon--cart', text: '6400201@colorel.ru', mailto: true})(class="icon-text--underline")
 				+icon-text({icon: 'icon--cart', text: '+7 (495) 640-02-01', url: '+74956400201', tel: true})
 
+			div.mr-mb10.page-text
+				h1 Title
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti aliquam nisi ullam nam, ex maxime rerum quis corrupti nihil dolorum dolore aut sed, vitae expedita. Minima dolor porro quia?
+				h2 Title 2
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti aliquam nisi ullam nam, ex maxime rerum quis corrupti nihil dolorum dolore aut sed, vitae expedita. Minima dolor porro quia?
+				h3 Title 3
+				ul
+					li 1
+					li 2
+					li 3
+				h4 Title 4
+				ol
+					li 1
+					li 2
+					li 3
+					li 4
+				ul
+					li 1
+					li 2
+					li 3
+				h5 Title 5
+				p Programm
+				code function checkParent (src, dest) {
+								|while (src != null) {
+								|	if (src.tagName == dest) return src
+								|		src = src.parentElement
+								|}
+								|return null
+								|}
+				h6 Title 6
+				figure 
+					img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv0tThq7hxCuIOpkvKSQfb3luzsy0pvlqd4Q8ZkEaz2ld0-ssb", alt="закат")
+					figcaption закат
+				figure 
+					img(src="http://forumsmile.ru/u/1/4/f/14fd113eac8b7e6f9381b2653e4badf1.jpg", alt="закат")
+					figcaption закат
+				p img
+				picture
+					source(srcset="https://ak6.picdn.net/shutterstock/videos/6623246/thumb/4.jpg" media="(min-width: 600px)")
+					img(src="mdn-logo-wide.png", alt="" srcet="images/logo.png@2 2x")
+
+
 		include include/script.pug
