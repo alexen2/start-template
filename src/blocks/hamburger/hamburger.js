@@ -7,10 +7,3 @@ if (hamburgers.length > 0) {
     }, false);
   });
 }
-// $(document).ready(function() {
-
-//   $('.hamburger').click(function() {
-//     $('.hamburger').toggleClass('is-active');
-//   });
-
-// });
