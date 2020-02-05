@@ -1,28 +1,15 @@
-/*
- * Variables
- *
- */
-
-/* 3 Typography */
-$link-color: #2196f3;
-$link-color-active: #0d7ad4;
-
-/*--------------------------------------------*/
-
 .link {
 	/* 3 Typography */
-	color: $link-color;
+	color: blue;
 	text-decoration: none;
+
+	/* 5 Animation */
+	transition: all 0.4s;
 }
 .link:hover {
 	/* 3 Typography */
 	text-decoration: underline;
-}
-.link:focus {
+
 	/* 4 Visual */
-	//outline: 2px solid $link-color;
-}
-.link:active {
-	/* 3 Typography */
-	color: $link-color-active;
+	opacity: 0.7;
 }
