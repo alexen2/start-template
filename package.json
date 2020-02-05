@@ -27,6 +27,10 @@
     "gulp-svgstore": "^7.0.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-stylelint": "^13.0.0",
+    "stylelint": "^13.0.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^19.0.0"
   }
 }

@@ -1,10 +1,24 @@
-/* 4 Visual */
-$btn-color-bg: transparent;
-$btn-color-border: transparent;
-
-/*--------------------------------------------*/
-
 .btn--flat {
-	background-color: $btn-color-bg;
-	border-color: $btn-color-border;
+	/* 3 Typography */
+	color: #000000;
+
+	/* 4 Visual */
+	background-color: transparent;
+	border: none;
+}
+.btn--flat .icon {
+	/* 4 Visual */
+	fill: #000000;
+}
+.btn--flat:hover {
+	/* 3 Typography */
+	color: #CCCCCC;
+
+	/* 4 Visual */
+	background-color: transparent;
+	border: none;
+}
+.btn--flat:hover .icon {
+	/* 4 Visual */
+	fill: #CCCCCC;
 }

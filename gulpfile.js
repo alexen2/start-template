@@ -15,6 +15,7 @@ const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
 const path2 = require('path');
 const reload = browserSync.reload;
+const gulpStylelint = require('gulp-stylelint');
 
 var path = {
   build: {
@@ -63,6 +64,19 @@ gulp.task('sass', function(){
 		.pipe(sass({outputStyle: 'compressed'}))
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest(path.build.css))
+});
+
+gulp.task('lintcss', function(){
+  return gulp
+    .src(['src/sass/*.scss', 'src/blocks/**/*.scss'])
+    .pipe(gulpStylelint({
+      reporters: [
+        {
+          formatter: 'string', 
+          console: true
+        }
+      ]
+    }));
 });
 
 gulp.task('pug', function(){
@@ -161,6 +175,7 @@ gulp.task('default', gulp.series(
 ));
 gulp.task('build', gulp.series(
   'clean',
+  'lintcss',
   'sass',
   'pug',
   'images',

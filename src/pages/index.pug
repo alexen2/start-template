@@ -7,5 +7,17 @@ html(lang="ru")
 		include ../blocks/mixins.pug
 		
 		div.container
+			div.mr-mb10
+				+btn({text: 'Запустить'})
+
+				+btn({text: 'Запустить', icon_l: 'icon--cart'})
+
+				+btn({text: 'Запустить', icon_r: 'icon--cart'}) .btn--block
+			div.mr-mb10
+				+btn({text: 'Запустить', icon_r: 'icon--cart'})(class="btn--block")
+			div.mr-mb10
+				+btn({text: 'Запустить', icon_r: 'icon--cart'})(class="btn--flat") 
+				+btn({text: 'Запустить'})(class="btn--outline")
+				+btn({text: 'Запустить', icon_l: 'icon--cart'})(class="btn--outline")
 
 		include include/script.pug
