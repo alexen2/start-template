@@ -127,5 +127,7 @@ html(lang="ru")
 
 			div.mr-mb10
 				include ../blocks/form/form.pug
+			div.mr-mb10
+				+search({label_text: 'поиск', type: 'text', name: 'search', placeholder: 'Введите для поиска', icon: 'icon--cart'})
 
 		include include/script.pug
