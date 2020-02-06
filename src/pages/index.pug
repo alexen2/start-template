@@ -101,5 +101,10 @@ html(lang="ru")
 				+logo({img: 'logo.png'})
 			div.mr-mb10
 				+picture({})
+			div.mr-mb10
+				+input({label_text: 'Ваше Имя', type: 'text', name: 'name_1', placeholder: 'Как Вас зовут ?', value: 'Алексей'})
+				+input({label_text: 'Телефон', type: 'tel', name: 'tel_1', placeholder: 'Ваш номер телефона'})
+			div.mr-mb10
+				+textarea({title: 'Поле ввода', name: 'message', rows: '10', placeholder: 'Кратко опишите задачу, и мы обязательно с Вами свяжемся!'})
 
 		include include/script.pug
