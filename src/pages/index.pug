@@ -84,5 +84,12 @@ html(lang="ru")
 
 				blockquote Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor esse dolorem assumenda id aperiam placeat. In sequi corporis unde veniam! Quos eveniet qui eius iusto nesciunt molestiae illum commodi?
 
+			div.mr-mb10
+				+menu('Главная' ,'Проукция', 'Контакты' ,'Адрес')
+			div.mr-mb10
+				+menu-vertical({
+						items: ['Главная','Проукция', 'Контакты', 'Адрес', 'Профиль'
+						  ]
+				  	})
 
 		include include/script.pug
