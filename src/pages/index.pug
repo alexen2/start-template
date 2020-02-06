@@ -122,5 +122,10 @@ html(lang="ru")
 							'Подкаст'
 						]
 					})
+			div.mr-mb10
+				+radio({name: 'radio', text: 'Disabled'})
+
+			div.mr-mb10
+				include ../blocks/form/form.pug
 
 		include include/script.pug
