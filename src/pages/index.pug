@@ -106,5 +106,21 @@ html(lang="ru")
 				+input({label_text: 'Телефон', type: 'tel', name: 'tel_1', placeholder: 'Ваш номер телефона'})
 			div.mr-mb10
 				+textarea({title: 'Поле ввода', name: 'message', rows: '10', placeholder: 'Кратко опишите задачу, и мы обязательно с Вами свяжемся!'})
+			div.mr-mb10
+				+checkbox({name: 'accept'})
+			div.mr-mb10
+				+select({
+						name: 'select',
+						value: [
+							'Сайт',
+							'Мобильное приложение',
+							'Подкаст'
+						],
+						items: [
+							'Сайт',
+							'Мобильное приложение',
+							'Подкаст'
+						]
+					})
 
 		include include/script.pug

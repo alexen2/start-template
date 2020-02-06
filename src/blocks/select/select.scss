@@ -1,0 +1,53 @@
+.select {
+	/* 1 Positioning */
+	position: relative;
+}
+.select::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: 50%;
+	right: 6px;
+
+	/* 2 Block model */
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+
+	/* 4 Visual */
+	content: '';
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 50%;
+
+	/* 6 Misc */
+}
+.select select {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	padding: 10px;
+
+	/* 3 Typography */
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	color: #000000;
+
+	/* 4 Visual */
+	border: 2px solid #000000;
+	border-radius: 5px;
+
+	/* 6 Misc */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.select select:focus {
+	/* 4 Visual */
+	outline: 2px solid blue;
+}
+.select select:active {
+	/* 4 Visual */
+	outline: 2px solid gray;
+}
