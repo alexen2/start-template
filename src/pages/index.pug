@@ -80,7 +80,7 @@ html(lang="ru")
 				p img
 				picture
 					source(srcset="https://ak6.picdn.net/shutterstock/videos/6623246/thumb/4.jpg" media="(min-width: 600px)")
-					img(src="mdn-logo-wide.png", alt="" srcet="images/logo.png@2 2x")
+					img(src="mdn-logo-wide.png", alt="" srcset="images/logo.png@2 2x")
 
 				blockquote Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor esse dolorem assumenda id aperiam placeat. In sequi corporis unde veniam! Quos eveniet qui eius iusto nesciunt molestiae illum commodi?
 
@@ -99,5 +99,7 @@ html(lang="ru")
 				  	})
 			div.mr-mb10
 				+logo({img: 'logo.png'})
+			div.mr-mb10
+				+picture({})
 
 		include include/script.pug

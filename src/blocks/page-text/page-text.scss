@@ -53,7 +53,6 @@
 
 	/* 4 Visual */
 	background-color: bisque;
-	border-radius: 10px;
 }
 .page-text figure {
 	/* 2 Block model */
@@ -64,10 +63,10 @@
 	margin-bottom: 20px;
 
 	/* 3 Typography */
-	text-align: center;
+	text-align: left;
 
 	/* 4 Visual */
-	background-color: #CCCCCC;
+	background-color: #EEEEEE;
 }
 .page-text figure img {
 	/* 2 Block model */
@@ -86,9 +85,4 @@
 	/* 2 Block model */
 	display: block;
 	width: 100%;
-}
-
-.page-text blockquote {
-	/* 2 Block model */
-	margin: 0 10px 10px 10px;
 }
