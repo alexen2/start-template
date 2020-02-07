@@ -1,6 +1,6 @@
 mixin radio(data)
 	div.radio(class!=attributes.class)
-		label(for!=data.name)
-			input(type="radio" name=data.name id!=data.name) 
+		label(for!=data.id)
+			input(type="radio" name=data.name id!=data.id) 
 			span.radio__text
 			!=data.text

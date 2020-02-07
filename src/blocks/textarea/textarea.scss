@@ -31,7 +31,7 @@
 	box-sizing: border-box;
 	display: block;
 	width: 100%;
-	padding: 22px 10px 19px 20px;
+	padding: 5px 10px;
 	overflow: hidden;
 
 	/* 3 Typography */
@@ -56,10 +56,16 @@
 .textarea textarea::-moz-placeholder {
 	/* 3 Typography */
 	color: red;
+
+	/* 4 Visual */
+	opacity: 1;
 }
 .textarea textarea:-moz-placeholder {
 	/* 3 Typography */
 	color: red;
+
+	/* 4 Visual */
+	opacity: 1;
 }
 .textarea textarea:-ms-input-placeholder {
 	/* 3 Typography */

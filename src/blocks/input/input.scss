@@ -34,23 +34,21 @@
 	/* 3 Typography */
 	color: red;
 }
-.input input:hover {
+.input input::-moz-placeholder {
+	/* 3 Typography */
+	color: red;
+	text-overflow: ellipsis;
+
 	/* 4 Visual */
-	cursor: pointer;
-	opacity: 0.7;
-}
-.input input:focus {
-	/* 4 Visual */
-	outline: 2px solid #FC0FC0;
-}
-.input input:active {
-	/* 4 Visual */
-	outline: 3px solid gray;
+	opacity: 1;
 }
 .input input:-moz-placeholder {
 	/* 3 Typography */
 	color: red;
 	text-overflow: ellipsis;
+
+	/* 4 Visual */
+	opacity: 1;
 }
 .input input:-ms-input-placeholder {
 	/* 3 Typography */
@@ -61,3 +59,14 @@
 	/* 3 Typography */
 	text-overflow: ellipsis;
 }
+.input input:hover {
+	/* 4 Visual */
+	cursor: pointer;
+	opacity: 0.7;
+}
+// .input input:focus {
+
+// }
+// .input input:active {
+
+// }

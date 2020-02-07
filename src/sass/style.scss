@@ -3,12 +3,7 @@
 @import 'mixins';
 @import 'base';
 
-/*
- * Blocks BEM library
- *
- */
-
-// Mixins
+// Atom-mixins
 
 @import '../blocks/icon/icon';
 @import '../blocks/btn/btn';
@@ -27,7 +22,7 @@
 @import '../blocks/radio/radio';
 @import '../blocks/search/search';
 
-// Blocks
+// Atom-blocks
 
 @import '../blocks/pagination/pagination';
 @import '../blocks/h1/h1';
@@ -47,8 +42,3 @@
 @import '../blocks/header/header';
 @import '../blocks/footer/footer';
 @import '../blocks/main/main';
-
-// Blocks mr - pd
-
-@import '../blocks/mr/mr';
-@import '../blocks/pd/pd';

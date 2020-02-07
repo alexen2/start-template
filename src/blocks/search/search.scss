@@ -23,7 +23,7 @@
 
 	/* 4 Visual */
 	border: 2px solid #000000;
-	border-right: 2px solid transparent;
+	border-right: 0;
 }
 .search input::-webkit-input-placeholder {
 	/* 3 Typography */
@@ -32,20 +32,17 @@
 	line-height: 26px;
 	color: blue;
 }
-.search input:focus {
-	/* 4 Visual */
-	border: 2px solid transparent;
-	outline: 2px solid #FC0FC0;
-}
-.search input:active {
-	/* 4 Visual */
-	outline: 2px solid gray;
-}
+// .search input:focus {
+
+// }
+// .search input:active {
+
+// }
 .search .btn {
 	/* 2 Block model */
 	padding: 5px 20px;
 
 	/* 4 Visual */
 	border-left: none;
-	border-radius: 2px 2px 0 0;
+	border-radius: 0 2px 2px 0;
 }

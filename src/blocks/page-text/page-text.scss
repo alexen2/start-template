@@ -56,8 +56,6 @@
 }
 .page-text figure {
 	/* 2 Block model */
-	width: 100%;
-	max-width: 200px;
 	padding: 10px;
 	margin: 0;
 	margin-bottom: 20px;
@@ -72,17 +70,8 @@
 	/* 2 Block model */
 	display: block;
 	width: 100%;
-	margin-bottom: 10px;
 }
 .page-text picture {
 	/* 2 Block model */
-	display: block;
-	width: 100%;
-	max-width: 200px;
 	margin-bottom: 20px;
-}
-.page-text picture img {
-	/* 2 Block model */
-	display: block;
-	width: 100%;
 }
