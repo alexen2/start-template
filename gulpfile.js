@@ -148,6 +148,7 @@ function watch() {
   gulp.watch(path.watch.img, images);
   gulp.watch(path.watch.icon, icon);
   gulp.watch(path.watch.js, js);
+  gulp.watch(['src/sass/*.scss', 'src/blocks/**/*.scss'], lintCssTask);
 }
 
 function server() {
@@ -163,7 +164,8 @@ function clean() {
 }
 
 gulp.task('default', gulp.series(
-	clean,  
+  clean,
+  lintCssTask,  
 	style,
 	html,
   images,
