@@ -46,8 +46,11 @@
 	-moz-appearance: none;
 	resize: none;
 	background: none;
-	border: 2px solid #000000;
+	border: 3px solid #000000;
 	appearance: none;
+
+	/* 5 Animation */
+	transition: all 0.4s;
 }
 .textarea textarea::-webkit-input-placeholder {
 	/* 3 Typography */
@@ -71,7 +74,27 @@
 	/* 3 Typography */
 	color: red;
 }
+.textarea textarea:hover {
+	/* 4 Visual */
+	cursor: pointer;
+	border: 3px solid gray;
+}
 .textarea textarea:focus {
 	/* 4 Visual */
-	outline: none;
+	border: 3px solid red;
+	border-radius: 2px;
+}
+.textarea textarea:active {
+	/* 4 Visual */
+	border: 3px solid blue;
+	border-radius: 2px;
+}
+.textarea textarea:disabled {
+	/* 3 Typography */
+	color: gray;
+
+	/* 4 Visual */
+	cursor: not-allowed;
+	background-color: #FFFFFF;
+	border: 3px solid pink;
 }

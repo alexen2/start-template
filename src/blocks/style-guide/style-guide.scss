@@ -1,0 +1,320 @@
+.style-guide__h1 {
+	/* 2 Block model */
+	margin: 0;
+	margin-bottom: 40px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 60px;
+	color: #01093F;
+	@media (min-width: 1200px) {
+		/* 3 Typography */
+		font-size: 100px;
+		line-height: 120px;
+	}
+}
+.style-guide__h2 {
+	/* 2 Block model */
+	margin: 0;
+	margin-bottom: 74px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 34px;
+	font-weight: 900;
+	line-height: 42px;
+	color: #01093F;
+	@media (min-width: 1200px) {
+		/* 3 Typography */
+		font-size: 64px;
+		line-height: 72px;
+	}
+}
+.style-guide__colors {
+	/* 2 Block model */
+	padding-bottom: 40px;
+	margin-bottom: 54px;
+
+	/* 4 Visual */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.style-guide__colors-sub {
+	/* 2 Block model */
+	margin: 0;
+	margin-bottom: 30px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #878787;
+}
+.style-guide__colors-block {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 21px 28px;
+
+	/* 4 Visual */
+	background-color: #899CFF;
+}
+.style-guide__colors-title {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 28px;
+	color: #000000;
+}
+.style-guide__colors-number {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	color: #000000;
+}
+.style-guide__typography-top {
+	/* 2 Block model */
+	margin-bottom: 54px;
+
+	/* 4 Visual */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.style-guide__typography-body {
+	/* 2 Block model */
+	margin-bottom: 54px;
+
+	/* 4 Visual */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.style-guide__tip-block {
+	/* 2 Block model */
+	margin-bottom: 40px;
+}
+.style-guide__tip-title {
+	/* 2 Block model */
+	margin: 0;
+	margin-bottom: 12px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #878787;
+}
+.style-guide__tip-subtitle {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 38px;
+	color: #01093F;
+}
+.style-guide__tip-subtitle-opensans {
+	/* 3 Typography */
+	font-family: $font-second;
+}
+.style-guide__tip-roboto {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 38px;
+	color: #01093F;
+}
+.style-guide__tip-roboto--b {
+	/* 3 Typography */
+	font-weight: 700;
+}
+.style-guide__tip-roboto--r {
+	/* 3 Typography */
+	font-weight: 400;
+}
+.style-guide__tip-opnesans {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 38px;
+	color: #01093F;
+}
+.style-guide__tip-opnesans--r {
+	/* 3 Typography */
+	font-weight: 400;
+}
+.style-guide__tip-subgray {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #878787;
+}
+.style-guide__tip-lead-title {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 72px;
+	font-weight: 900;
+	line-height: 84px;
+	color: #000000;
+}
+.style-guide__tip-h1 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 52px;
+	color: #000000;
+}
+.style-guide__tip-h2 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 48px;
+	color: #000000;
+}
+.style-guide__tip-h3 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+	color: #000000;
+}
+.style-guide__tip-h4 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 34px;
+	color: #000000;
+}
+.style-guide__tip-h5 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 28px;
+	color: #000000;
+}
+.style-guide__tip-h6 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #000000;
+}
+.style-guide__tip-sub {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	color: #000000;
+}
+.style-guide__tip-lead {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 34px;
+	color: #000000;
+}
+.style-guide__tip-text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #000000;
+}
+.style-guide__tip-text--sm {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #000000;
+}
+.style-guide__tip-btn {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #000000;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

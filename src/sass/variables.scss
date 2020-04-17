@@ -3,7 +3,8 @@
  *
  */
 
-$font-main: "Arial", "Helvetica", sans-serif;
+$font-main: "Roboto", sans-serif;
+$font-second: "Open Sans", sans-serif;
 
 /*
  * Colors
@@ -22,6 +23,14 @@ $breakpoints: (
 	lg: 992px,
 	xl: 1200px
 );
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1752px
+);
+
+$grid-gutter-width: 20px;
 
 /*
  * Animation Speed

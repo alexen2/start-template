@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'variables';
+@import 'grid/bootstrap-grid';
 @import 'mixins';
 @import 'base';
 
@@ -40,5 +41,6 @@
 // Main Blocks
 
 @import '../blocks/header/header';
-@import '../blocks/footer/footer';
 @import '../blocks/main/main';
+@import '../blocks/footer/footer';
+@import '../blocks/style-guide/style-guide';

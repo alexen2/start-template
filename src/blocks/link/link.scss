@@ -13,3 +13,17 @@
 	/* 4 Visual */
 	opacity: 0.7;
 }
+.link:focus {
+	/* 4 Visual */
+	border: 2px solid blue;
+	border-radius: 2px;
+}
+.link:active {
+	/* 4 Visual */
+	border: 2px solid gray;
+	border-radius: 2px;
+}
+.link:visited {
+	/* 3 Typography */
+	color: red;
+}

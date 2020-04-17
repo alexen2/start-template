@@ -5,10 +5,172 @@ html(lang="ru")
 
 	body
 		include ../blocks/mixins.pug
-		
+
+		section.style-guide
+			div.container
+				div.row
+					div.col-12
+						h1.style-guide__h1 Style Guide.
+
+			div.style-guide__colors
+				div.container
+					div.row
+						div.col-12
+							h2.style-guide__h2 Colors
+
+					div.row
+						div.col-12
+							p.style-guide__colors-sub Primary
+						div.col-3
+							div.style-guide__colors-block
+								p.style-guide__colors-title Primary--xlite
+								p.style-guide__colors-number #899CFF
+
+			div.style-guide__typography
+				div.container
+					div.row
+						div.col-12
+							h2.style-guide__h2 Typography
+				div.style-guide__typography-top
+					div.container
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-title Font Name
+									p.style-guide__tip-subtitle Roboto
+							div.col-9
+								div.style-guide__tip-item
+									div.style-guide__tip-block
+										p.style-guide__tip-title Font Weights
+										p.style-guide__tip-roboto Black, 
+											span.style-guide__tip-roboto--b Bold, 
+											span.style-guide__tip-roboto--r  Regular
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-title Font Name
+									p.style-guide__tip-subtitle.style-guide__tip-subtitle-opensans Open Sans
+							div.col-9
+								div.style-guide__tip-item
+									div.style-guide__tip-block
+										p.style-guide__tip-title Font Weights
+										p.style-guide__tip-opnesans Bold, 
+											span.style-guide__tip-opnesans--r Regular
+				div.style-guide__typography-body
+					div.container
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray Lead Title 
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-lead-title Roboto - Black 72px/84px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray H1
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-h1 Roboto - Bold 42px/52px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray H2
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-h2 Roboto - Bold 38px/48px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray H3
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-h3 Roboto - Bold 32px/40px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray H4
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-h4 Roboto - Bold 26px/34px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray H5
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-h5 Roboto - Bold 22px/28px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray H6
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-h6 Roboto - Bold 18px/24px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray Subtitle
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-sub Roboto - Bold 16px/20px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray Lead
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-lead Open Sans - Regular 22px/34px
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray Text
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-text Open Sans - Regular 16px/26px
+
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray Text--sm
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-text--sm Open Sans - Regular 14px/20px
+
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-subgray Button text
+							div.col-9
+								div.style-guide__tip-block
+									p.style-guide__tip-btn Roboto - Bold 16px/26px
+			
+			div.style-guide__buttons
+				div.container
+					div.row
+						div.col-12
+							h2.style-guide__h2 Buttons
+				div.style-guide__typography-top
+					div.container
+						div.row
+							div.col-3
+								div.style-guide__tip-block
+									p.style-guide__tip-title Font Name
+									p.style-guide__tip-subtitle Roboto
+							div.col-9
+								div.style-guide__tip-item
+									div.style-guide__tip-block
+										p.style-guide__tip-title Font Weights
+										p.style-guide__tip-roboto Black, 
+											span.style-guide__tip-roboto--b Bold, 
+											span.style-guide__tip-roboto--r  Regular
 		div.container
 			div.mr-mb10
-				+btn({text: 'Запустить'})
+				a.link(href="#") Link
+			div.mr-mb10
+				+btn({text: 'Запустить'})(class="btn-dis" disabled)
+
+				+btn({text: 'Запустить', type: "link", url: '#', rel: '#'})(class="btn-dis")
 
 				+btn({text: 'Запустить', icon_l: 'icon--cart'})
 
@@ -104,10 +266,15 @@ html(lang="ru")
 			div.mr-mb10
 				+input({label_text: 'Ваше Имя', type: 'text', name: 'name_1', placeholder: 'Как Вас зовут ?', value: 'Алексей'})
 				+input({label_text: 'Телефон', type: 'tel', name: 'tel_1', placeholder: 'Ваш номер телефона'})
+				+input({label_text: 'Почта', type: 'tel', name: 'tel_1', placeholder: 'Ваша почта'})(disabled="disabled")
 			div.mr-mb10
 				+textarea({title: 'Поле ввода', name: 'message', rows: '10', placeholder: 'Кратко опишите задачу, и мы обязательно с Вами свяжемся!'})
+				+textarea({title: 'Поле ввода', name: 'message', rows: '10', placeholder: 'Опишите ваш запрос.'})(disabled="disabled")
 			div.mr-mb10
 				+checkbox({name: 'accept'})
+				+checkbox({name: 'check', checked: true})
+				+checkbox({name: 'dese'})(disabled="disabled")
+				+checkbox({name: 'dis', checked: true})(disabled="disabled")
 			div.mr-mb10
 				+select({
 						name: 'select',
@@ -123,47 +290,13 @@ html(lang="ru")
 						]
 					})
 			div.mr-mb10
-				+radio({name: 'radio', text: 'Disabled'})
+				+radio({name: 'radio_1', text: 'First'})
+				+radio({name: 'radio_1', text: 'Two'})
+				+radio({name: 'radio_1', text: 'Third', checked: true})
+				+radio({name: 'radio_1', text: 'Fires'})(disabled="disabled")
 
 			div.mr-mb10
 				include ../blocks/form/form.pug
 			div.mr-mb10
 				+search({label_text: 'поиск', type: 'text', name: 'search', placeholder: 'Введите для поиска', icon: 'icon--cart'})
-		//- div.container
-		//- 	h1 Buttons
-
-		//- 	include ../blocks/btn/btn.pug
-		//- 	+btn({text: 'Button'})
-		//- 	+btn({text: 'Button link', type: 'link'})
-		//- 	+btn({icon_l: 'icon--cart'})
-		//- 	+btn({text: 'Button', icon_l: 'icon--cart'})
-		//- 	+btn({text: 'Button', icon_r: 'icon--cart'})
-
-		//- 	br
-
-		//- 	+btn({text: 'Button sm', icon_l: 'icon--cart'})(class="btn--sm")
-		//- 	+btn({text: 'Button', icon_l: 'icon--cart'})
-		//- 	+btn({text: 'Button lg', icon_l: 'icon--cart'})(class="btn--lg")
-
-		//- 	br
-
-		//- 	+btn({text: 'Button'})(class="btn--red")
-		//- 	+btn({text: 'Button', icon_l: 'icon--cart'})(class="btn--blue")
-
-		//- 	br
-
-		//- 	+btn({text: 'Button'})(class="btn--outline")
-
-		//- 	br
-
-		//- 	+btn({text: 'Button'})(class="btn--flat")
-
-		//- 	br
-
-		//- 	+btn({text: 'Button'})(class="btn--fix")
-
-		//- 	h1 Links
-
-		//- 	a.link(href="#") Link
-
 		include include/script.pug
