@@ -148,7 +148,7 @@ function watch() {
   gulp.watch(path.watch.img, images);
   gulp.watch(path.watch.icon, icon);
   gulp.watch(path.watch.js, js);
-  gulp.watch(['src/sass/*.scss', 'src/blocks/**/*.scss'], lintCssTask);
+  // gulp.watch(['src/sass/*.scss', 'src/blocks/**/*.scss'], lintCssTask);
 }
 
 function server() {
@@ -165,7 +165,7 @@ function clean() {
 
 gulp.task('default', gulp.series(
   clean,
-  lintCssTask,  
+  // lintCssTask,  
 	style,
 	html,
   images,
@@ -183,7 +183,7 @@ gulp.task('default', gulp.series(
 
 gulp.task('build', gulp.series(
   clean,
-  lintCssTask,
+  // lintCssTask,
   style,
 	html,
   images,
